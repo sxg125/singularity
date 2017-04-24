@@ -47,6 +47,7 @@ nvidia-modprobe
 nvidia-cuda-mps-server    # if necessary
 ```
 <b>Issue</b>: The minimum required Cuda capability is 3.0. Device mapping: no known devices
+
 <b>Solution</b>: check the version of Cuda compute capability (CC) - check [HPC Guide to Cuda] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/cuda).
 ```
 module load cuda
