@@ -1,3 +1,8 @@
+# Table of Contents
+1. [Tensorflow Installation](#Tensorflow installation)
+2. [Testing](#Testing)
+3. [Troubleshooting](#Troubleshooting)
+
 # Singularity Guide
 
 ## Tensorflow installation
@@ -21,18 +26,18 @@ sh build_container_cuda7.5.sh
 ```
 You will find the image tensorflow.img created in the same directory, tensorflow-gpu
 
-### Testing
+## Testing
 Follow the [HPC Singularity Guide] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 
-### Troubleshooting
-Issue - CUDA_ERROR_UNKNOWN
+## Troubleshooting
+<b>Issue</b>: CUDA_ERROR_UNKNOWN
 ---------
 2017-04-20 20:51:13.381572: E tensorflow/stream_executor/cuda/cuda_driver.cc:405] failed call to cuInit: CUDA_ERROR_UNKNOWN
 2017-04-20 20:51:13.381599: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: gpu029t
 
 --------
 
-Solution - Run the following:
+<b> Solution</b>: Run the following:
 ```
 /sbin/MAKEDEV nvidia
 chmod 666 /dev/nvidia*
@@ -41,8 +46,8 @@ chmod 666 /dev/nvidia*
 nvidia-modprobe
 nvidia-cuda-mps-server    # if necessary
 ```
-Issue - The minimum required Cuda capability is 3.0. Device mapping: no known devices
-Solution - check the version of Cuda compute capability (CC) - check [HPC Guide to Cuda] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/cuda).
+<b>Issue</b>: The minimum required Cuda capability is 3.0. Device mapping: no known devices
+<b>Solution</b>: check the version of Cuda compute capability (CC) - check [HPC Guide to Cuda] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/cuda).
 ```
 module load cuda
 deviceQuery
