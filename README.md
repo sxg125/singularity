@@ -56,6 +56,6 @@ deviceQuery
 ```
 
 ## References
-1. [Singularity-Images] (https://github.com/clemsonciti/singularity-images/tree/master/tensorflow)
-2. [Singularity-Docker] (http://singularity.lbl.gov/docs-docker)
-3. [HPC Singularity Guide]  (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
+1. [Singularity-Images](https://github.com/clemsonciti/singularity-images/tree/master/tensorflow)
+2. [Singularity-Docker](http://singularity.lbl.gov/docs-docker)
+3. [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
