@@ -16,6 +16,7 @@ sh build_container_cuda7.5.sh
 You will find the image tensorflow.img created in the same directory, tensorflow-gpu
 ### Testing
 Follow the [HPC Singularity Guide] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
+[VTK/Python] (http://www.vtk.org/Wiki/VTK/Examples/Python/Graphs/NOVCAGraph)
 
 ## References
 1. [Singularity-Images] (https://github.com/clemsonciti/singularity-images/tree/master/tensorflow)
