@@ -7,7 +7,7 @@ Make sure all these files/directories are in the same directory, say tensorflow-
 build_container_cuda7.5.sh  cuda-7.5               cudnn-7.5-linux-x64-v5.1.tgz  links.sh                        
 cuda                     cuda_7.5.18_linux.run  install_cuda.sh               NVIDIA-Linux-x86_64-375.26.run
 ```
-Here, cuda-7.5 is the cuda installation directory created after the installation using cuda_7.5.18_linux.run. cuda directory contains cudnn libraries which are obtained after untarring cudnn-7.5-linux-x64-v5.1.tgz. You need to register in NVIDIA to download cudnn. You need to match the driver and cuda version appropriately if you are installing other version of cuda.
+Here, cuda-7.5 is the cuda installation directory created after the installation using cuda_7.5.18_linux.run. cuda directory contains cudnn libraries which are obtained after untarring cudnn-7.5-linux-x64-v5.1.tgz. You need to register in NVIDIA to download cudnn. You need to match the driver and cuda version appropriately if you are installing other version of cuda. So, modify the scripts accordingly.
 
 ### Installation
 Go to the tensorflow-gpu directory and run the script - build_container_cuda7.5.sh
