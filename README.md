@@ -32,7 +32,7 @@ Issue: CUDA_ERROR_UNKNOWN
 
 --------
 
-Solution: Run the following
+Solution: Run the following:
 ```
 /sbin/MAKEDEV nvidia
 chmod 666 /dev/nvidia*
