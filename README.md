@@ -1,9 +1,9 @@
+# Singularity Guide
+
 # Table of Contents
 1. [Tensorflow Installation](#Tensorflow)
 2. [Testing](#Testing)
 3. [Troubleshooting](#Troubleshooting)
-
-# Singularity Guide
 
 ## Tensorflow installation
 ### Pre-requisites: 
