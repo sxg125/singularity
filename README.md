@@ -1,7 +1,8 @@
 # Singularity Guide
 
-## Tensorflow installation [1]
-### Pre-requisites: Make sure all these files/directories are in the same directory, say tensorflow-gpu.
+## Tensorflow installation
+### Pre-requisites: 
+Make sure all these files/directories are in the same directory, say tensorflow-gpu [1].
 ```
 build_container_cuda7.5.sh  cuda-7.5               cudnn-7.5-linux-x64-v5.1.tgz  links.sh                        
 cuda                     cuda_7.5.18_linux.run  install_cuda.sh               NVIDIA-Linux-x86_64-375.26.run
