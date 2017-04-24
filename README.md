@@ -1,5 +1,5 @@
-# singularity
-Singularity Guide
+# singularity Guide
+
 ## Tensorflow installation [1]
 ### Pre-requisites: Make sure all these files/directories are in the same directory, say tensorflow-gpu.
 ```
