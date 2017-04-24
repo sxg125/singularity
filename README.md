@@ -30,7 +30,8 @@ You will find the image tensorflow.img created in the same directory, tensorflow
 Follow the [HPC Singularity Guide] (https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 
 ## Troubleshooting
-<b>Issue</b>: CUDA_ERROR_UNKNOWN
+
+<b>Issue</b>: CUDA_UNKNOWN_ERROR
 ---------
 2017-04-20 20:51:13.381572: E tensorflow/stream_executor/cuda/cuda_driver.cc:405] failed call to cuInit: CUDA_ERROR_UNKNOWN
 2017-04-20 20:51:13.381599: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: gpu029t
