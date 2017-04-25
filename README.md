@@ -1,4 +1,4 @@
-# Singularity Guide
+# Tensorflow-GPU with Singularity
 
 # Table of Contents
 1. [Tensorflow Installation](#Tensorflow)
