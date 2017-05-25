@@ -23,3 +23,6 @@ sudo /usr/local/singularity/2.2.1/bin/singularity exec -B `pwd`:/mnt -w tensorfl
 sudo /usr/local/singularity/2.2.1/bin/singularity exec -B `pwd`:/mnt -w tensorflow.img mkdir /local_scratch
 sudo /usr/local/singularity/2.2.1/bin/singularity exec -B `pwd`:/mnt -w tensorflow.img mkdir /scratch
 sudo /usr/local/singularity/2.2.1/bin/singularity exec -B `pwd`:/mnt -w tensorflow.img mkdir /software
+
+# Install Keras
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable tensorflow.img pip install keras
