@@ -1,5 +1,5 @@
 # Tensorflow-GPU with Singularity
-Note: After the release of Singularity-2.3, it is no longer necessary to install NVIDIA drivers into your Singularity container to access the GPU on a host node. Please visit [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
+<b>Note:</b> After the release of Singularity-2.3, it is no longer necessary to install NVIDIA drivers into your Singularity container to access the GPU on a host node. Please visit [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 # Table of Contents
 1. [Tensorflow Installation](#Tensorflow)
 2. [Testing](#Testing)
