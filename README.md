@@ -29,6 +29,39 @@ You will find the image tensorflow.img created in the same directory, tensorflow
 ## Testing
 Follow the [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 
+## Tenosorflow-gpu with Python3
+In the imported tensorflow docker image, python3 may already be installed. You need to install pip3. To avoid the error "E: Failed to fetch", you need to update the packages 
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get update
+```
+### Install Pip
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get install python3-pip
+```
+If you get the error "perl: warning: Setting locale failed", you need to install the package "language-pack-en-base", re-install "python3-pip"
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get install language-pack-en-base
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get purge python3-pip
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get install python3-pip
+```
+### Test Pip3
+```
+singularity exec $TENSORFLOW pip3 show pip
+```
+### Install tensorflow-gpu module
+check the tensorflow module version installed with python2
+```
+singularity exec $TENSORFLOW python -c 'import tensorflow as tf; print(tf.__version__)'
+```
+Install the same version (e.g. 1.1.0-rc2) of tensorflow
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install tensorflow-gpu==1.1.0-rc2
+```
+## Install Keras (optional)
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install keras
+```
+
 ## Troubleshooting
 
 <b>Issue</b>: CUDA_UNKNOWN_ERROR
