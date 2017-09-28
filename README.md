@@ -3,7 +3,8 @@
 # Table of Contents
 1. [Tensorflow Installation](#Tensorflow)
 2. [Testing](#Testing)
-3. [Troubleshooting](#Troubleshooting)
+3. [Tenosorflow-gpu with Python3[(#Tenosorflow-gpu with Python3) 
+4. [Troubleshooting](#Troubleshooting)
 
 ## Tensorflow installation
 ### Pre-requisites: 
