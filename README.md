@@ -31,8 +31,9 @@ You will find the image tensorflow.img created in the same directory, tensorflow
 Follow the [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 
 ## Tenosorflow-gpu with Python3
-In the imported tensorflow docker image, python3 may already be installed. You need to install pip3. To avoid the error "E: Failed to fetch", you need to update the packages 
+In the imported tensorflow docker image, python3 may already be installed. You need to install pip3. To avoid the error "E: Failed to fetch", you need to update the packages. Initally, Load the tensorflow module to set the environment variable for the path to tensorflow image.
 ```
+module load tensorflow
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get update
 ```
 ### Install Pip
