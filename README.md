@@ -55,7 +55,7 @@ check the tensorflow module version installed with python2
 ```
 singularity exec $TENSORFLOW python -c 'import tensorflow as tf; print(tf.__version__)'
 ```
-Install the same version (e.g. 1.1.0-rc2) of tensorflow
+Install the same version (e.g. 1.1.0-rc2) of tensorflow [4]
 ```
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install tensorflow-gpu==1.1.0-rc2
 ```
@@ -94,3 +94,4 @@ deviceQuery
 1. [Singularity-Images](https://github.com/clemsonciti/singularity-images/tree/master/tensorflow)
 2. [Singularity-Docker](http://singularity.lbl.gov/docs-docker)
 3. [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
+4. [Tensorflow Releases](https://github.com/tensorflow/tensorflow/releases)
