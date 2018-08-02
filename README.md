@@ -63,11 +63,14 @@ Additional Modules installed for Convolutional Neural Network (CNN)
 ```
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install h5py
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install cython
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install graphviz
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libsm6
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libxrender1
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libfontconfig1
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libtiff-dev
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libxext-dev
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install graphviz
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install pydot
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install opencv-python
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install libtiff
 ```
