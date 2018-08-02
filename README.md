@@ -31,7 +31,7 @@ You will find the image tensorflow.img created in the same directory, tensorflow
 Follow the [HPC Singularity Guide](https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide/singularity)
 
 ## Tenosorflow-gpu with Python3
-In the imported tensorflow docker image, python3 may already be installed. You need to install pip3. To avoid the error "E: Failed to fetch", you need to update the packages. Initally, Load the tensorflow module to set the environment variable for the path to tensorflow image.
+In the imported tensorflow docker image, python3 may already be installed. You need to install pip3. To avoid the error "E: Failed to fetch", you need to update the packages. Initally, Load the tensorflow module to set the environment variable ($TENSORFLOW) for the path to tensorflow, tensorflow.img file
 ```
 module load tensorflow
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt-get update
@@ -59,6 +59,19 @@ Install the same version (e.g. 1.1.0-rc2) of tensorflow [4]
 ```
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install tensorflow-gpu==1.1.0-rc2
 ```
+Additional Modules installed for Convolutional Neural Network (CNN)
+```
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install h5py
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install cython
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libsm6
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libxrender1
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libfontconfig1
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libtiff-dev
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW apt install libxext-dev
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install opencv-python
+sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python -m pip install libtiff
+```
+
 ## Install Keras (optional)
 ```
 sudo /usr/local/singularity/2.2.1/bin/singularity exec --writable $TENSORFLOW python3 -m pip install keras
